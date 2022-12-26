@@ -25,6 +25,10 @@ document.body.appendChild(container);
 
 button.addEventListener("click", newGrid);
 
+let v1 = Math.floor(Math.random() * 255);
+let v2 = Math.floor(Math.random() * 255);
+let v3 = Math.floor(Math.random() * 255);
+
 function newGrid() {
   while (container.hasChildNodes()) {
     container.removeChild(container.firstChild);
@@ -37,9 +41,11 @@ function newGrid() {
   }
 
   container.style.gridTemplateColumns = `repeat(${value}, 1fr)`;
-  let v1 = Math.floor(Math.random() * 255);
-  let v2 = Math.floor(Math.random() * 255);
-  let v3 = Math.floor(Math.random() * 255);
+
+  v1 -= (10 / 100) * v1;
+  v2 -= (10 / 100) * v2;
+  v3 -= (10 / 100) * v3;
+
   for (i = 0; i < value; i++) {
     for (j = 0; j < value; j++) {
       let sqr = document.createElement("div");
