@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-height: fit-content;
+    max-width: fit-content;
+    margin-top: calc(15% - 200px);
+    margin-left: calc(40% - 200px);
+    background-color: rgb(130, 251, 255);
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.sqrdiv {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(29, 175, 185);
+    border: 1px solid black;
+    border-radius: 6px;
+}
