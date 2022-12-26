@@ -10,9 +10,9 @@ for (let i = 0; i < 16; i++) {
     sqr.addEventListener("mouseenter", function () {
       sqr.style.backgroundColor = "blue";
     });
-    sqr.addEventListener("mouseleave", function () {
+    /*sqr.addEventListener("mouseleave", function () {
       sqr.style.backgroundColor = "rgb(29, 175, 185)";
-    });
+    });*/
   }
 }
 
@@ -45,9 +45,9 @@ function newGrid() {
       sqr.addEventListener("mouseenter", function () {
         sqr.style.backgroundColor = "blue";
       });
-      sqr.addEventListener("mouseleave", function () {
+      /*sqr.addEventListener("mouseleave", function () {
         sqr.style.backgroundColor = "rgb(29, 175, 185)";
-      });
+      });*/
     }
   }
   document.body.appendChild(container);
